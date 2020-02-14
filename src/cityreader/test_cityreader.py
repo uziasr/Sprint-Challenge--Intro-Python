@@ -75,6 +75,9 @@ class CityreaderTests(unittest.TestCase):
       City("Louisville", 38.1662,-85.6488),
       City("Portland", 45.5372,-122.65)
     ]
+
+    print("for cities:   ", self.cities[0].name, self.cities[0].lat, self.cities[0].lon,  len(self.cities), self.cities[-1].name)
+    print("for expected: ", self.expected[0].name, self.expected[0].lat, self.expected[0].lon,  len(self.expected), self.expected[-1].name)
     
   def test_cityreader_correctness(self):
     for i in range(len(self.cities)):
